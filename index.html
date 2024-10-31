@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/style.css" />
+        <title>Notes</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="imgLogo">
+                    <img src="/images/📝Notes.svg" alt="Notes" />
+                </div>
+                <div class="headerCount">
+                    <img class="notesPng" src="/images/notes.png" alt="" />
+
+                    <span class="textHeader">Всего заметок:</span>
+                    <span class="notesCount">0</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="formSection">
+            <div class="container">
+                <div class="formNotes">
+                    <form class="form" action="">
+                        <div class="formHeaderNotes">
+                            <legend class="textNotes">Название заметки</legend>
+                            <input
+                                class="nameNotes"
+                                type="text"
+                                placeholder="Напишите название новой заметки..."
+                            />
+                        </div>
+                        <div class="formPart_2">
+                            <div>
+                                <legend class="textNotes">
+                                    Описание новой заметки
+                                </legend>
+                                <textarea
+                                    placeholder="Напишите описание новой заметки..."
+                                    class="aboutNotes"
+                                    name=""
+                                    id=""
+                                ></textarea>
+                            </div>
+
+                            <div class="colors">
+                                <legend class="textNotes">
+                                    Выберите цвет заметки
+                                </legend>
+                                <ul class="conteinerColor"></ul>
+                                <button class="btn" type="submit">
+                                    <svg
+                                        width="14"
+                                        height="14"
+                                        viewBox="0 0 14 14"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M1 7H7M7 7H13M7 7V1M7 7V13"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    Добавить заметку
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="container checkbox">
+            <input type="checkbox" class="active check" />
+            <div>Показать только избранные заметки</div>
+        </div>
+
+        <section class="notesSection">
+            <ul class="container notes"></ul>
+
+            <div class="toast toastWarning">
+                <img src="/images/warning.svg" />
+                <span class="toastMessage"> </span>
+            </div>
+            <div class="toast toastSuccess">
+                <img src="/images/Done.svg" />
+                <span class="toastMessage"> </span>
+            </div>
+        </section>
+
+        <script src="/js/main.js"></script>
+    </body>
+</html>
