@@ -184,8 +184,8 @@ const view = {
                                 class="like"
                                 src="${
                                     note.isLike
-                                        ? "/images/heart active.svg"
-                                        : "/images/heart inactive.svg"
+                                        ? "images/heart active.svg"
+                                        : "images/heart inactive.svg"
                                 }"
                                 alt="like"
                                 width="16"
@@ -193,7 +193,7 @@ const view = {
                             />
                             <img
                                 class="delete-button"
-                                src="/images/trash.svg"
+                                src="images/trash.svg"
                                 alt=""
                                 width="16"
                                 height="16"
